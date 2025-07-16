@@ -1,0 +1,35 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+                   padding: 10px;
+                   border: 1px solid black;
+                   color: rgb(255, 255, 255);
+                   background-color: rgb(148, 127, 44);
+               }
+           </style>
+</head>
+<body>
+    <div id="box" class="test">
+        <h2>Box one</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, commodi.</p>
+    </div>
+    <br> <br>
+    <button id="btn">Button</button>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+    $('#btn').click(function(){
+        $('#box').css("background-color","red").slideUp(2000).slideDown(2000, function(){
+            $('#box').css("background-color","green")
+        });
+    });
+    
+    })
+</script>
+
+</body>
+</html>

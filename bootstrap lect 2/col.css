@@ -1,0 +1,12 @@
+.container{
+    border: 7px solid black;
+}
+
+.row{
+    border: 3px solid tan;
+    background-color: blanchedalmond;
+}
+
+.col{
+    border: 2px solid tan; 
+}
